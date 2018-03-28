@@ -30,7 +30,7 @@ data frame.
 
 ## Chapters
 
-1. [Before we start](00-before-we-start.html)
+1. [Why R](00-Why_R.html)
 2. [Introduction to R](01-intro-to-r.html)
 3. [Starting with data](02-starting-with-data.html)
 4. [Aggregating and analyzing data with dplyr](03-dplyr.html)
