@@ -1,0 +1,108 @@
+---
+title: "Notebooks"
+author: "Data Carpentry contributors"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+------------
+
+> ### Learning Objectives
+>
+> * Create an R Notebook in RStudio.
+> * Enter text into an R Notebook.
+> * Enter and run code chunks into an R Notebook.
+> * Use Preview to quickly preview a Notebook.
+
+------------
+
+### About R Notebooks
+
+This is an [R Markdown Notebook](https://rmarkdown.rstudio.com/r_notebooks.html). When you execute code within the notebook, the 
+results appear beneath the code.
+
+We will talk more about R Markdown on Day 2, and all the wonderful things you can do using it to create documents, but today we 
+are going to focus on using R Markdown Notebooks to create reproducible code.
+
+Briefly, R Markdown is a simple way to create documents with formatting by using specific symbols and characters. Programs capable 
+of reading R Markdown can render a nicely formatted document. This is similar to the way that HTML files are text documents with 
+specific tags, which are read by specific programs (web browsers, etc.) that apply those tags to the text, interpret the 
+formatting, apply it to the document, and display it. R Markdown files (and R Notebooks) have the base file extension *.Rmd. An R 
+Notebook will have the line 
+output: html_notebook
+in the header. 
+
+R Notebooks have a few extra features over regular R Markdown documents:
+
+* When you execute code in a Notebook, it is done line by line, so it can be easier to check execution for errors. In a regular R 
+Markdown document, code is executed all at once.
+
+* You can *Preview* your notebook using the *Preview* button - this displays a rendered HTML copy of the contents of the editor, 
+but does not actually run any code. This makes it a bit faster to check your output.
+
+* When you save your notebook, it creates a special *.nb.html file, which is actually a package of the HTML rendering (of the 
+page, with the code sections as separate image files in their own directory) and the Markdown file. This can be shared with 
+others and opened like a regular fine from within RStudio.
+
+
+### Text Formatting
+
+To create a new R Markdown Notebook in RStudio, select File -> New File -> R Notebook.
+
+You can enter text into a Notebook as you normally would into any other text document and use Markdown conventions to format it.
+
+Enter text between the double asterisks below to format it as bold:
+** **
+
+Enter text between the underscores below to format it as italic:
+_ _
+
+Click Preview when you are finished.
+
+Take advantage of this to document your code and data to keep it readable, understandable, and reproducible!
+
+
+### Embedding Code Chunks
+
+You can embed R code into Notebooks by using chunks, set off above and below by three reverse ticks: ``` 
+
+Try executing this chunk by clicking the *Run* button (small green arrow) within the chunk or by placing your cursor 
+inside it and pressing *Cmd+Shift+Enter*.
+
+```{r}
+a <- 17
+b <- 34
+a + b
+```
+
+Here's another example - run it the same way:
+
+```{r}
+plot(cars)
+```
+
+The 'cars' dataset is an example dataset built into R, and the 'plot' command is a basic R command to create a default plot of 
+simple data. We'll talk more about plotting using ggplot later on in this workshop.
+
+Add a new chunk in the space below by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*. 
+Perform the following operations:
+Assign your shoe size to a variable. Then:
+1. Multiply this variable by 5.
+2. Add 50.
+3. Multiply by 20.
+4. Add 1015.
+5. Subtract the year you were born.
+6. Display the answer.
+
+Insert code chunk here
+
+
+### Save and Preview
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button 
+or press *Cmd+Shift+K* to preview the HTML file). 
+
+Save this notebook that you have been working in, and click *Preview* to view the output.
