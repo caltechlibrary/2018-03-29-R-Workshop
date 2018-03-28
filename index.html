@@ -270,7 +270,7 @@ div.tocify {
   <a href="index.html">Lesson Home</a>
 </li>
 <li>
-  <a href="00-before-we-start.html">Before we start</a>
+  <a href="00-Why_R.html">Why R</a>
 </li>
 <li>
   <a href="01-intro-to-r.html">Intro to R</a>
@@ -289,9 +289,7 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://caltechlibrary.github.io/2017-07-20-caltech/">Workshop Home</a>
-</li>
+        
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -310,15 +308,15 @@ div.tocify {
 <p>
 </p>
 <p>This workshop is a Data Carpentry-inspired lesson based on the ‘Data Carpentry: R for Data Analysis and Visualization of Ecological Data’ lesson, maintained by François Michonneau &amp; Auriel Fournier. The most current version of this lesson can be found <a href="http://www.datacarpentry.org/R-ecology-lesson/">here</a>.</p>
-<p>Parts of this lesson are also derived from <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Data Science in the tidyverse</em></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cwickham/data-science-in-the-tidyverse" property="cc:attributionName" rel="cc:attributionURL">Charlotte Wickham</a> ‘Data science in the tidyverse’, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> and based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rstudio/master-the-tidyverse" rel="dct:source">https://github.com/rstudio/master-the-tidyverse</a>.</p>
+<p>Parts of this lesson are also derived from <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Data Science in the tidyverse</em></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cwickham/data-science-in-the-tidyverse" property="cc:attributionName" rel="cc:attributionURL">Charlotte Wickham</a>, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> and based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rstudio/master-the-tidyverse" rel="dct:source">https://github.com/rstudio/master-the-tidyverse</a>.</p>
 <p>
 </p>
 <p>Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain.</p>
-<p>This is an introduction to R designed for participants with no programming experience. These lessons can be taught in a day (~ 6 hours). They start with some basic information about R syntax, the RStudio interface, and move through how to import CSV files, the structure of data frames, how to deal with factors, how to add/remove rows and columns, how to calculate summary statistics from a data frame, and a brief introduction to plotting.</p>
+<p>This is an introduction to R designed for participants with no programming experience. These lessons will cover an overview of the RStudio interface, basic R syntax, an introduction to the <em>tidyverse</em> package and <em>ggplot</em>, working with files, the structure of data frames, how to deal with factors, how to add/remove rows and columns, and how to calculate summary statistics from a data frame.</p>
 <div id="chapters" class="section level2">
 <h2>Chapters</h2>
 <ol style="list-style-type: decimal">
-<li><a href="00-before-we-start.html">Before we start</a></li>
+<li><a href="00-Why_R.html">Why R</a></li>
 <li><a href="01-intro-to-r.html">Introduction to R</a></li>
 <li><a href="02-starting-with-data.html">Starting with data</a></li>
 <li><a href="03-dplyr.html">Aggregating and analyzing data with dplyr</a></li>
@@ -335,7 +333,7 @@ div.tocify {
 </div>
 <div id="setup-instructions" class="section level3">
 <h3>Setup instructions</h3>
-<p><strong>R</strong> and <strong>RStudio</strong> are separate downloads and installations. R is the underlying statistical computing environment, but using R alone is no fun. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. You need to install R before you install RStudio. After installing both programs, you will need to install the <strong><code>tidyverse</code></strong> package from within RStudio. Follow the instructions below for your operating system, and then follow the instructions to install <strong><code>tidyverse</code></strong> and <strong><code>RSQLite</code></strong>.</p>
+<p><strong>R</strong> and <strong>RStudio</strong> are separate downloads and installations. R is the underlying statistical computing environment, but using R alone is no fun. RStudio is a graphical integrated development environment (IDE) that makes using R much easier and more interactive. You need to install R before you install RStudio. After installing both programs, you will need to install the <strong><code>tidyverse</code></strong> package from within RStudio. Follow the instructions below for your operating system, and then follow the instructions to install <strong><code>tidyverse</code></strong>.</p>
 <div id="windows" class="section level4">
 <h4>Windows</h4>
 <div id="if-you-already-have-r-and-rstudio-installed" class="section level5">
@@ -391,9 +389,9 @@ div.tocify {
 </div>
 <div id="for-everyone" class="section level4">
 <h4>For everyone</h4>
-<p><strong>After installing R and RStudio, you need to install the <code>tidyverse</code> and <code>RSQLite</code> packages.</strong></p>
+<p><strong>After installing R and RStudio, you need to install the <code>tidyverse</code> package.</strong></p>
 <ul>
-<li>After starting RStudio, at the console type: <code>install.packages(c(&quot;tidyverse&quot;, &quot;RSQLite&quot;))</code></li>
+<li>After starting RStudio, at the console type: <code>install.packages(c(&quot;tidyverse&quot;))</code></li>
 </ul>
 </div>
 </div>
