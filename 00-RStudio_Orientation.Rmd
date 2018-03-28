@@ -1,5 +1,5 @@
 ---
-title: "About R and RStudio"
+title: "RStudio_Orientation"
 author: "Data Carpentry contributors"
 minutes: 15
 ---
