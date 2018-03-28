@@ -1,9 +1,9 @@
 navbar:
   left:
-    - text: "Lesson Home"
+    - text: "Home"
       href: index.html
-    - text: "Why R"
-      href: 00-Why_R.html
+    - text: "About R/RStudio"
+      href: 00-About_R.html
     - text: "Intro to R"
       href: 01-intro-to-r.html
     - text: "Starting with data"
