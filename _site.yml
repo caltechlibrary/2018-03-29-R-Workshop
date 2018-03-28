@@ -1,28 +1,38 @@
 navbar:
   left:
-    - text: "Home"
-      href: index.html
-    - text: "RStudio Orientation"
-      href: 00-RStudio_Orientation.html
-    - text: "Intro to R"
-      href: 01-intro-to-r.html
-    - text: "Starting with data"
-      href: 02-starting-with-data.html
-    - text: "Manipulating data frames"
-      href: 03-dplyr.html
-    - text: "Visualizing data"
-      href: 04-visualization-ggplot2.html
-    - text: "Code Handout"
-      href: code-handout.R
-output_dir: "."
-exclude: ["CONTRIBUT*.md","index.md","README.md","*.db"]
-include: ["*.Rmd","LICENSE.md"]
+  - text: Home
+    href: index.html
+  - text: RStudio Orientation
+    href: 00-RStudio_Orientation.html
+  - text: Intro to R
+    href: 01-intro-to-r.html
+  - text: Starting with data
+    href: 02-starting-with-data.html
+  - text: Manipulating data frames
+    href: 03-dplyr.html
+  - text: Visualizing data
+    href: 04-visualization-ggplot2.html
+  - text: Code Handout
+    href: code-handout.R
+output_dir: .
+exclude:
+- CONTRIBUT*.md
+- index.md
+- README.md
+- '*.db'
+include:
+- '*.Rmd'
+- LICENSE.md
 output:
   html_document:
     highlight: pygments
-    toc: true
+    toc: yes
     toc_float:
-      collapsed: false
+      collapsed: no
     include:
       after_body: footer.html
     css: style.css
+    lib_dir: site_libs
+    self_contained: no
+name: 2018-03-29-R-Workshop
+
