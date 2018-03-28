@@ -1,20 +1,24 @@
 ---
-title: 'Data Carpentry: R for Data Analysis and Visualization of Ecological Data'
-author: "François Michonneau & Auriel Fournier (Lesson Maintainers)"
+title: 'Data Analysis, Visualization, and Reproducibility with R Notebooks'
+author: "Donna Wrublewski (Instructor)"
 ---
 
 <p></p>
 
-<div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
-![](./img/DC-logo-vision.png)
-</div>
+This workshop is a Data Carpentry-inspired lesson based on the 'Data Carpentry: R for 
+Data Analysis and Visualization of Ecological Data' lesson, maintained by François
+Michonneau & Auriel Fournier. The most current version of this lesson can be found 
+[here](http://www.datacarpentry.org/R-ecology-lesson/).
+
+Parts of this lesson are also derived from <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">*Data Science in the tidyverse*</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/cwickham/data-science-in-the-tidyverse" property="cc:attributionName" rel="cc:attributionURL">Charlotte Wickham</a>, which is
+licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+International License</a> and based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rstudio/master-the-tidyverse" rel="dct:source">https://github.com/rstudio/master-the-tidyverse</a>.
 
 <p></p>
 
 Data Carpentry's aim is to teach researchers basic concepts, skills,
 and tools for working with data so that they can get more done in less
-time, and with less pain. The lessons below were designed for those interested
-in working with ecology data in R.
+time, and with less pain.
 
 This is an introduction to R designed for participants with no programming
 experience. These lessons can be taught in a day (~ 6 hours). They start with

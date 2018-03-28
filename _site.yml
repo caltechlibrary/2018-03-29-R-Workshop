@@ -14,9 +14,6 @@ navbar:
       href: 04-visualization-ggplot2.html
     - text: "Code Handout"
       href: code-handout.R
-  right:
-    - text: "Workshop Home"
-      href: https://caltechlibrary.github.io/2017-07-20-caltech/
 output_dir: "."
 exclude: ["CONTRIBUT*.md","index.md","README.md","*.db"]
 include: ["*.Rmd","LICENSE.md"]

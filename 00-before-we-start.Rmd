@@ -4,27 +4,21 @@ author: "Data Carpentry contributors"
 minutes: 15
 ---
 
-
-```{r, echo=FALSE, purl=FALSE}
-knitr::opts_chunk$set(results='hide', fig.path='img/r-lesson-')
-```
-
 ------------
 
 > ### Learning Objectives
 >
-> * Describe the purpose of the RStudio Script, Console, Environment, and Plots
+> * Describe the purpose of the RStudio Script, Console, 
+>   Environment/History/Connections, and Files/Plots/Packages/Help/Viewer
 >   panes.
-> * Organize files and directories for a set of analyses as an R
+> * Organize files and directories for a set of analyses as an R.
 >   Project, and understand the purpose of the working directory.
 > * Use the built-in RStudio help interface to search for more information on R
 >   functions.
 > * Demonstrate how to provide sufficient information for
 >   troubleshooting with the R user community.
-> * This is a test line.
 
 ------------
-
 
 ## What is R? What is RStudio?
 
@@ -34,6 +28,7 @@ that interprets the scripts written using it.
 RStudio is currently a very popular way to not only write your R scripts but
 also to interact with the R software. To function correctly, RStudio needs R and
 therefore both need to be installed on your computer.
+
 
 ## Why learn R?
 
@@ -69,9 +64,9 @@ reproducible, so knowing R will give you an edge with these requirements.
 
 With 10,000+ packages that can be installed to extend its capabilities, R
 provides a framework that allows you to combine statistical approaches from many
-scientific disciplines to best suit the analytical framework you need to analyze your
-data. For instance, R has packages for image analysis, GIS, time series, population
-genetics, and a lot more.
+scientific disciplines to best suit the analytical framework you need to analyze
+your data. For instance, R has packages for image analysis, GIS, time series, 
+population genetics, and a lot more.
 
 ### R works on data of all shapes and sizes
 
@@ -130,6 +125,7 @@ you need to write code is available in a single window. Additionally, with many
 shortcuts, autocompletion, and highlighting for the major file types you use
 while developing in R, RStudio will make typing easier and less error-prone.
 
+
 ## Getting set up
 
 It is good practice to keep a set of related data, analyses, and text
@@ -145,12 +141,7 @@ RStudio provides a helpful set of tools to do this through its "Projects"
 interface, which not only creates a working directory for you but also remembers
 its location (allowing you to quickly navigate to it) and optionally preserves
 custom settings and open files to make it easier to resume work after a
-break. 
-
-We will be using the Project Directory that was set up yesterday with Git version
-control. The following directions walk through how to set up a new Project. After
-creating the directory, it can be initalized with Git (following the steps from 
-yesterday) to enable version control.
+break.
 
 To create a new "R Project":
 
@@ -259,7 +250,11 @@ command and return you to the `>` prompt.
 
 ![RStudio help interface](img/rstudiohelp.png)
 
-One of the most fastest ways to get help, is to use the RStudio help interface. This panel by default can be found at the lower right hand panel of RStudio. As seen in the screenshot, by typing the word "Mean", RStudio tries to also give a number of suggestions that you might be interested in. The description is then shown in the display window.
+One of the quickest ways to get help is to use the RStudio help interface. This
+panel by default can be found at the lower right hand panel of RStudio. As seen in
+the screenshot, by typing the word "Mean", RStudio tries to also give a number of
+suggestions that you might be interested in. The description is then shown in the 
+display window.
 
 ### I know the name of the function I want to use, but I'm not sure how to use it
 
@@ -269,18 +264,22 @@ If you need help with a specific function, let's say `barplot()`, you can type:
 ?barplot
 ```
 
+This will display the help topic in the Help pane on the lower right.
+
 If you just need to remind yourself of the names of the arguments, you can use:
 
 ```{r, eval=FALSE, purl=FALSE}
 args(lm)
 ```
 
+This will display the arguments of the function in the Console window.
+
 ### I want to use a function that does X, there must be a function for it but I don't know which one...
 
 If you are looking for a function to do a particular task, you can use the
 `help.search()` function, which is called by the double question mark `??`.
 However, this only looks through the installed packages for help pages with a
-match to your search request
+match to your search request.
 
 ```{r, eval=FALSE, purl=FALSE}
 ??kruskal
