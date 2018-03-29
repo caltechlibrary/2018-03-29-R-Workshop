@@ -2,10 +2,8 @@
 title: "Notebooks"
 author: "Data Carpentry contributors"
 output:
-  html_notebook: default
   html_document:
     df_print: paged
-  pdf_document: default
 ---
 
 ------------
@@ -18,6 +16,11 @@ output:
 > * Use Preview to quickly preview a Notebook.
 
 ------------
+
+### Download This Notebook
+
+You can download an R Notebook version of this lesson to follow along with 
+[here](https://github.com/caltechlibrary/2018-03-29-R-Workshop/blob/gh-pages/03-R_Notebooks.nb.html.zip).
 
 ### About R Notebooks
 
@@ -60,7 +63,7 @@ Enter text between the double asterisks below to format it as bold:
 Enter text between the underscores below to format it as italic:
 _ _
 
-Click Preview when you are finished.
+Click Preview when you are finished to view your changes.
 
 Take advantage of this to document your code and data to keep it readable, understandable, and reproducible!
 
@@ -91,7 +94,7 @@ simple data. We'll talk more about plotting using ggplot later on in this worksh
 
 Note the addition of *cars_plot* in the {r} designation - this is the name of the code chunk. This can be used to 
 navigate your Notebook using the menu in the lower left of the document window. It is also used when you are calling 
-an external R script into a Notebook, and we'll see an example of that in the next example.
+an external R script into a Notebook, and we'll see an example of that in the next example. You can also add sections to your document using headings designated by `###` - you'll learn more about that tomorrow.
 
 Add a new chunk in the space below by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*. 
 Name your chunk 'math_trick'.
@@ -105,27 +108,18 @@ Assign your shoe size to a variable. Then:
 6. Display the answer.
 
 Insert code chunk here
-```{r math_trick}
-shoe <- 9
-shoe <- shoe * 5
-shoe <- shoe + 50
-shoe <- shoe * 20
-shoe <- shoe + 1017
-shoe <- shoe - 1979
-shoe
-```
 
 If you wanted to call this **script** in multiple Notebooks, you could save it as an R code file:
 
 1. Click File -> New File -> R Script.
 2. Copy and paste your code into the new file.
-3. Add the line '## ---- math_trick' (without quotes) at the top of your file.
-4. You can now call this R script in any R chunk in any R Notebook using the line `knitr::read_chunk("example.R")`.
+3. Add the line `## ---- math_trick` at the top of your file.
+4. Save your file as `math_trick.R`.
+5. You can now call this R script in any R chunk in any R Notebook using the line `knitr::read_chunk("math_trick.R")`.
 
 
 ### Save and Preview
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button 
-or press *Cmd+Shift+K* to preview the HTML file). 
-
-Save this notebook that you have been working in, and click *Preview* to view the output.
+After you save the notebook, an HTML file containing the code and output will be saved
+alongside it when you click the *Preview* button (or press *Cmd+Shift+K*) to preview 
+the HTML file.
