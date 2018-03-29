@@ -105,14 +105,12 @@ find some, you can report and fix bugs.
 
 ## Chapters
 
-1. [Why R](00-Why_R.html)
-2. [Introduction to R](01-intro-to-r.html)
-3. [Starting with data](02-starting-with-data.html)
-4. [Aggregating and analyzing data with dplyr](03-dplyr.html)
-5. [Data visualization with **`ggplot2`**](04-visualization-ggplot2.html)
-
-
-
+1. [Orientation to RStudio](01-RStudio_Orientation.html)
+2. [Introduction to R](02-intro-to-r.html)
+3. [R Notebooks](03-R_Notebooks.html)
+4. [Starting with Data](04-starting-with-data.html)
+5. [Aggregating and analyzing data with dplyr](03-dplyr.html)
+6. [Data visualization with **`ggplot2`**](04-visualization-ggplot2.html)
 
 
 ## Requirements

@@ -3,15 +3,17 @@ navbar:
   - text: Home
     href: index.html
   - text: RStudio Orientation
-    href: 00-RStudio_Orientation.html
+    href: 01-RStudio_Orientation.html
   - text: Intro to R
-    href: 01-intro-to-r.html
-  - text: Starting with data
-    href: 02-starting-with-data.html
-  - text: Manipulating data frames
-    href: 03-dplyr.html
-  - text: Visualizing data
-    href: 04-visualization-ggplot2.html
+    href: 02-intro-to-r.html
+  - text: R Notebooks
+    href: 03-R_Notebooks.html
+  - text: Starting with Data
+    href: 04-starting-with-data.html
+  - text: Manipulating Data Frames
+    href: 05-dplyr.html
+  - text: Visualizing Data
+    href: 06-visualization-ggplot2.html
 output_dir: .
 exclude:
 - CONTRIBUT*.md
