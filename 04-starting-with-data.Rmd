@@ -1,7 +1,9 @@
 ---
 title: "Starting with data"
 author: "Data Carpentry contributors"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 minutes: 20
 ---
 
@@ -17,6 +19,10 @@ minutes: 20
 > * Format dates in R
 
 ------------
+
+## Download this lesson as an R Notebook
+
+Download this lesson as an R Notebook [here](https://github.com/caltechlibrary/2018-03-29-R-Workshop/blob/gh-pages/04-starting-with-data.nb.html.zip).
 
 ## Presentation of the Survey Data
 
