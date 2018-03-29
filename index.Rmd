@@ -109,8 +109,8 @@ find some, you can report and fix bugs.
 2. [Introduction to R](02-intro-to-r.html)
 3. [R Notebooks](03-R_Notebooks.html)
 4. [Starting with Data](04-starting-with-data.html)
-5. [Aggregating and analyzing data with dplyr](03-dplyr.html)
-6. [Data visualization with **`ggplot2`**](04-visualization-ggplot2.html)
+5. [Aggregating and analyzing data with dplyr](05-dplyr.html)
+6. [Data visualization with **`ggplot2`**](06-visualization-ggplot2.html)
 
 
 ## Requirements
