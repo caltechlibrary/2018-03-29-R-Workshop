@@ -96,16 +96,18 @@ Note the addition of *cars_plot* in the {r} designation - this is the name of th
 navigate your Notebook using the menu in the lower left of the document window. It is also used when you are calling 
 an external R script into a Notebook, and we'll see an example of that in the next example. You can also add sections to your document using headings designated by `###` - you'll learn more about that tomorrow.
 
-Add a new chunk in the space below by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*. 
-Name your chunk 'math_trick'.
-Perform the following operations:
-Assign your shoe size to a variable. Then:
-1. Multiply this variable by 5.
-2. Add 50.
-3. Multiply by 20.
-4. Add 1017 (1018 if you have already had your birthday this year)
-5. Subtract the year you were born.
-6. Display the answer.
+Add a new chunk in the space below by clicking the *Insert Chunk* button on the toolbar 
+or by pressing *Cmd+Option+I*.
+
+1. Name your chunk 'math_trick'.
+2. Perform the following operations:
+3. Assign your shoe size to a variable.
+4. Multiply this variable by 5.
+5. Add 50.
+6. Multiply by 20.
+7. Add 1017 (1018 if you have already had your birthday this year)
+8. Subtract the year you were born.
+9. Display the answer.
 
 Insert code chunk here
 
