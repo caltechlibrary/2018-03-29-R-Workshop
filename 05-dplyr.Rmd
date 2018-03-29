@@ -77,13 +77,13 @@ We're going to learn some of the most common **`dplyr`** functions: `select()`,
 data frame, use `select()`. The first argument to this function is the data
 frame (`surveys`), and the subsequent arguments are the columns to keep.
 
-```{r, echo=FALSE, results = 'hide', purl = FALSE}
+```{r, results = 'hide', purl = FALSE}
 select(surveys, plot_id, species_id, weight)
 ```
 
 To choose rows based on a specific criteria, use `filter()`:
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 filter(surveys, year == 1995)
 ```
 
@@ -104,7 +104,7 @@ when you need to do many things to the same dataset.  Pipes in R look like
 `%>%` and are made available via the `magrittr` package, installed automatically
 with **`dplyr`**. If you use RStudio, you can type the pipe with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> if you have a PC or <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> if you have a Mac.
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   filter(weight < 5) %>%
   select(species_id, sex, weight)
@@ -120,7 +120,7 @@ its right, we don't need to explicitly include it as an argument to the
 If we wanted to create a new object with this smaller version of the data, we
 could do so by assigning it a new name:
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys_sml <- surveys %>%
   filter(weight < 5) %>%
   select(species_id, sex, weight)
@@ -135,7 +135,7 @@ Note that the final data frame is the leftmost part of this expression.
 >  Using pipes, subset the `survey` data to include individuals collected before
 >  1995 and retain only the columns `year`, `sex`, and `weight`.
 
-    ```{r, eval=FALSE, purl=TRUE, echo=FALSE}
+    ```{r, eval=FALSE, purl=TRUE}
     ## Pipes Challenge:
     ##  Using pipes, subset the data to include individuals collected
     ##  before 1995, and retain the columns `year`, `sex`, and `weight.`
@@ -150,14 +150,14 @@ columns. For this we'll use `mutate()`.
 
 To create a new column of weight in kg:
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   mutate(weight_kg = weight / 1000)
 ```
 
 You can also create a second new column based on the first new column within the same call of `mutate()`:
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   mutate(weight_kg = weight / 1000,
          weight_kg2 = weight_kg * 2)
@@ -167,7 +167,7 @@ If this runs off your screen and you just want to see the first few rows, you
 can use a pipe to view the `head()` of the data. (Pipes work with non-**`dplyr`**
 functions, too, as long as the **`dplyr`** or `magrittr` package is loaded).
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   mutate(weight_kg = weight / 1000) %>%
   head
@@ -180,7 +180,7 @@ function with or without parentheses (e.g. `head` or `head()`).
 The first few rows of the output are full of `NA`s, so if we wanted to remove
 those we could insert a `filter()` in the chain:
 
-```{r, echo=FALSE, purl = FALSE}
+```{r, purl = FALSE}
 surveys %>%
   filter(!is.na(weight)) %>%
   mutate(weight_kg = weight / 1000) %>%
