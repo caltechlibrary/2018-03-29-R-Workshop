@@ -1,0 +1,9 @@
+Reproducible reporting as we practice it in the 21st century has its very roots at Caltech, where Donald Knuth began his exploration of literature programming (enter citation key here). The book cover from the seminal work he authored on this topic is shown below.  ![Enter Title of Book Here ]
+
+Insert the book cover image here and set its width in pixels.
+
+In the words of Knuth:
+
+(Format the following as a block quote)
+
+WEB's macros are allowed to have at most one parameter. Again, I did this in the interests of simplicity, because I noticed that most applications of multiple parameters could in fact be reduced to the one-parameter case. For example, suppose that you want to define something like... In other words, the name of one macro can usefully be a parameter to another macro. This particular trick makes it possible to... cite Knuth 1984 but without the author's name displaying inline.

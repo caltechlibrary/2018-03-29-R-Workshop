@@ -1,0 +1,17 @@
+I am writing this report in `Sys.timezone()`
+
+Today's date is `r Sys.Date()`
+
+The exact time is `r format(Sys.time(), "%a %b %d %X %Y")`
+
+### Quick Reference on Date and Time formats
+
+| Code |Value |
+|-----|-----|
+|%a |Day of the week|
+|%d |Day of the month (decimal number)|
+|%m | Month (decimal number)|
+|%b |Month (abbreviated)|
+|%B |Month (full name)|
+|%y |Year (2 digit)|
+|%Y |Year (4 digit|

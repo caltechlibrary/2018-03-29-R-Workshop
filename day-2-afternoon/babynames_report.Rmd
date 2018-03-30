@@ -1,0 +1,39 @@
+---
+title: "Babynames Report"
+author: "Gail Clement"
+date: "March 30, 2018"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r}
+### load packages
+library(babynames) 
+library(dplyr) 
+library(tidyr)
+library(ggplot2)
+library(gridExtra)
+library(magrittr)
+head(babynames)
+```
+
+
+Now let's plot your name (substitute "Sydney" for your firstname)
+```{r echo = TRUE}
+g1 <- babynames %>%
+  filter(name =="Sydney") %>%
+  ggplot(., aes(year, n)) +
+  geom_line(aes(color=sex), lwd=1) +
+  scale_color_manual(values = c("firebrick1", "dodgerblue")) +
+  theme_bw() +
+  ggtitle("Popularity of Sydney Among American Babies")
+  
+g1
+```
+This exercise is borrowed from James P. Curley's [Clustering of baby names over time](https://rpubs.com/jalapic/babynames) which is online at [Clustering of baby names over time]](https://rpubs.com/jalapic/babynames)

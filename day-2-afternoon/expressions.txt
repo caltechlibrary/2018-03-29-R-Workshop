@@ -1,0 +1,13 @@
+$$\frac{n!}{k!(n-k)!}$$
+$$\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x$$ 
+
+For more examples of equations, see Archer Reilly's Writing Mathematic Formula in Markdown which is online at 
+http://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/)]
+
+-------------------------------
+
+$\psi$ $\sigma$ 
+
+$\aleph \beth$
+
+For more examples of LaTeX expressions, see Cantiello et al's How To Write Mathematical Equations, Expressions, and Symbols with LaTeX: A cheatsheet which is online at https://www.authorea.com/users/77723/articles/110898-how-to-write-mathematical-equations-expressions-and-symbols-with-latex-a-cheatsheet
