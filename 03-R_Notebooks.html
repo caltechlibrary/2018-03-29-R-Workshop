@@ -402,7 +402,7 @@ a <span class="op">+</span><span class="st"> </span>b</code></pre></div>
 <p>Note the addition of <em>cars_plot</em> in the {r} designation - this is the name of the code chunk. This can be used to navigate your Notebook using the menu in the lower left of the document window. It is also used when you are calling an external R script into a Notebook, and we’ll see an example of that in the next example. You can also add sections to your document using headings designated by <code>###</code> - you’ll learn more about that tomorrow.</p>
 <p>Add a new chunk in the space below by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Cmd+Option+I</em>.</p>
 <ol style="list-style-type: decimal">
-<li>Name your chunk ‘math_trick’.</li>
+<li>Name your chunk ‘math_trick_nb_example’.</li>
 <li>Perform the following operations:</li>
 <li>Assign your shoe size to a variable.</li>
 <li>Multiply this variable by 5.</li>
@@ -412,15 +412,27 @@ a <span class="op">+</span><span class="st"> </span>b</code></pre></div>
 <li>Subtract the year you were born.</li>
 <li>Display the answer.</li>
 </ol>
-<p>Insert code chunk here</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">shoe_size &lt;-<span class="st"> </span><span class="dv">9</span>
+shoe_size_mod &lt;-<span class="st"> </span>(((shoe_size <span class="op">*</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">50</span>) <span class="op">*</span><span class="st"> </span><span class="dv">20</span>) <span class="op">+</span><span class="st"> </span><span class="dv">1018</span> <span class="op">-</span><span class="st"> </span><span class="dv">1979</span>
+shoe_size_mod</code></pre></div>
+<pre><code>## [1] 939</code></pre>
 <p>If you wanted to call this <strong>script</strong> in multiple Notebooks, you could save it as an R code file:</p>
 <ol style="list-style-type: decimal">
 <li>Click File -&gt; New File -&gt; R Script.</li>
 <li>Copy and paste your code into the new file.</li>
 <li>Add the line <code>## ---- math_trick</code> at the top of your file.</li>
 <li>Save your file as <code>math_trick.R</code>.</li>
-<li>You can now call this R script in any R chunk in any R Notebook using the line <code>knitr::read_chunk(&quot;math_trick.R&quot;)</code>.</li>
+<li>In your R Notebook, load the script using an <code>{r setup}</code> using the <code>knitr::read_chunk()</code> function as such:</li>
 </ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">read_chunk</span>(<span class="st">&quot;math_trick.R&quot;</span>)</code></pre></div>
+<p>Note that nothing will display.</p>
+<ol start="6" style="list-style-type: decimal">
+<li>You can now call this R script using <code>{r math_trick}</code> in an otherwise empty code chunk as such:</li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">shoe_size &lt;-<span class="st"> </span><span class="dv">10</span>
+shoe_size_mod &lt;-<span class="st"> </span>(((shoe_size <span class="op">*</span><span class="st"> </span><span class="dv">5</span>) <span class="op">+</span><span class="st"> </span><span class="dv">50</span>) <span class="op">*</span><span class="st"> </span><span class="dv">20</span>) <span class="op">+</span><span class="st"> </span><span class="dv">1018</span> <span class="op">-</span><span class="st"> </span><span class="dv">1979</span>
+shoe_size_mod</code></pre></div>
+<pre><code>## [1] 1039</code></pre>
 </div>
 <div id="save-and-preview" class="section level3">
 <h3>Save and Preview</h3>

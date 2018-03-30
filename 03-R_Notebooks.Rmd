@@ -99,7 +99,7 @@ an external R script into a Notebook, and we'll see an example of that in the ne
 Add a new chunk in the space below by clicking the *Insert Chunk* button on the toolbar 
 or by pressing *Cmd+Option+I*.
 
-1. Name your chunk 'math_trick'.
+1. Name your chunk 'math_trick_nb_example'.
 2. Perform the following operations:
 3. Assign your shoe size to a variable.
 4. Multiply this variable by 5.
@@ -109,7 +109,11 @@ or by pressing *Cmd+Option+I*.
 8. Subtract the year you were born.
 9. Display the answer.
 
-Insert code chunk here
+```{r math_trick_nb_example}
+shoe_size <- 9
+shoe_size_mod <- (((shoe_size * 5) + 50) * 20) + 1018 - 1979
+shoe_size_mod
+```
 
 If you wanted to call this **script** in multiple Notebooks, you could save it as an R code file:
 
@@ -117,8 +121,19 @@ If you wanted to call this **script** in multiple Notebooks, you could save it a
 2. Copy and paste your code into the new file.
 3. Add the line `## ---- math_trick` at the top of your file.
 4. Save your file as `math_trick.R`.
-5. You can now call this R script in any R chunk in any R Notebook using the line `knitr::read_chunk("math_trick.R")`.
+5. In your R Notebook, load the script using an `{r setup}` using the `knitr::read_chunk()` function as such:
 
+```{r setup}
+knitr::read_chunk("math_trick.R")
+```
+
+Note that nothing will display.
+
+6. You can now call this R script using ```{r math_trick}``` in an otherwise empty code chunk as such:
+
+```{r math_trick}
+
+```
 
 ### Save and Preview
 
