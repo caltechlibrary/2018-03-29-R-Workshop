@@ -81,7 +81,7 @@ surveys_plot + geom_point()
 
 ```{r, eval=FALSE, purl=TRUE, echo=FALSE, purl=FALSE}
 ## Create a ggplot and draw it.
-surveys_plot <- ggplot(data = surveys_complete, aes(x = weight, y = hindfoot_length))
+# surveys_plot <- ggplot(data = surveys_complete, aes(x = weight, y = hindfoot_length))
 surveys_plot + geom_point()
 ```
 
