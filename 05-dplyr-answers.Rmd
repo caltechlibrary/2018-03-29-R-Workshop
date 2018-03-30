@@ -286,7 +286,202 @@ surveys %>%
   filter(!is.na(weight)) %>%
   group_by(sex, species_id) %>%
   summarize(mean_weight = mean(weight))
-```
+```Show in New WindowClear OutputExpand/Collapse Output
+plot_id
+<int>
+species_id
+<fctr>
+weight
+<int>
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	NA		
+2	NL	218		
+2	NL	NA		
+Next123456...100Previous
+1-10 of 34,786 rows
+Show in New WindowClear OutputExpand/Collapse Output
+record_id
+<int>
+month
+<int>
+day
+<int>
+year
+<int>
+plot_id
+<int>
+species_id
+<fctr>
+sex
+<fctr>
+hindfoot_length
+<int>
+22314	6	7	1995	2	NL	M	34	
+22728	9	23	1995	2	NL	F	32	
+22899	10	28	1995	2	NL	F	32	
+23032	12	2	1995	2	NL	F	33	
+22003	1	11	1995	2	DM	M	37	
+22042	2	4	1995	2	DM	F	36	
+22044	2	4	1995	2	DM	M	37	
+22105	3	4	1995	2	DM	F	37	
+22109	3	4	1995	2	DM	M	37	
+22168	4	1	1995	2	DM	M	36	
+Next123456...100Previous
+1-10 of 1,180 rows | 1-8 of 13 columns
+Show in New WindowClear OutputExpand/Collapse Output
+species_id
+<fctr>
+sex
+<fctr>
+weight
+<int>
+PF	F	4		
+PF	F	4		
+PF	M	4		
+RM	F	4		
+RM	M	4		
+PF		4		
+PP	M	4		
+RM	M	4		
+RM	M	4		
+RM	M	4		
+Next12Previous
+1-10 of 17 rows
+Show in New WindowClear OutputExpand/Collapse Output
+species_id
+<fctr>
+sex
+<fctr>
+weight
+<int>
+PF	F	4		
+PF	F	4		
+PF	M	4		
+RM	F	4		
+RM	M	4		
+PF		4		
+PP	M	4		
+RM	M	4		
+RM	M	4		
+RM	M	4		
+Next12Previous
+1-10 of 17 rows
+Show in New WindowClear OutputExpand/Collapse Output
+record_id
+<int>
+month
+<int>
+day
+<int>
+year
+<int>
+plot_id
+<int>
+species_id
+<fctr>
+sex
+<fctr>
+hindfoot_length
+<int>
+1	7	16	1977	2	NL	M	32	
+72	8	19	1977	2	NL	M	31	
+224	9	13	1977	2	NL		NA	
+266	10	16	1977	2	NL		NA	
+349	11	12	1977	2	NL		NA	
+363	11	12	1977	2	NL		NA	
+435	12	10	1977	2	NL		NA	
+506	1	8	1978	2	NL		NA	
+588	2	18	1978	2	NL	M	NA	
+661	3	11	1978	2	NL		NA	
+Next123456...100Previous
+1-10 of 34,786 rows | 1-8 of 14 columns
+Show in New WindowClear OutputExpand/Collapse Output
+record_id
+<int>
+month
+<int>
+day
+<int>
+year
+<int>
+plot_id
+<int>
+species_id
+<fctr>
+sex
+<fctr>
+hindfoot_length
+<int>
+1	7	16	1977	2	NL	M	32	
+72	8	19	1977	2	NL	M	31	
+224	9	13	1977	2	NL		NA	
+266	10	16	1977	2	NL		NA	
+349	11	12	1977	2	NL		NA	
+363	11	12	1977	2	NL		NA	
+435	12	10	1977	2	NL		NA	
+506	1	8	1978	2	NL		NA	
+588	2	18	1978	2	NL	M	NA	
+661	3	11	1978	2	NL		NA	
+Next123456...100Previous
+1-10 of 34,786 rows | 1-8 of 15 columns
+Show in New WindowClear OutputExpand/Collapse Output
+ 
+ 
+record_id
+<int>
+month
+<int>
+day
+<int>
+year
+<int>
+plot_id
+<int>
+species_id
+<fctr>
+sex
+<fctr>
+1	1	7	16	1977	2	NL	M	
+2	72	8	19	1977	2	NL	M	
+3	224	9	13	1977	2	NL		
+4	266	10	16	1977	2	NL		
+5	349	11	12	1977	2	NL		
+6	363	11	12	1977	2	NL		
+6 rows | 1-8 of 14 columns
+Show in New WindowClear OutputExpand/Collapse Output
+ 
+ 
+record_id
+<int>
+month
+<int>
+day
+<int>
+year
+<int>
+plot_id
+<int>
+species_id
+<fctr>
+sex
+<fctr>
+1	588	2	18	1978	2	NL	M	
+2	845	5	6	1978	2	NL	M	
+3	990	6	9	1978	2	NL	M	
+4	1164	8	5	1978	2	NL	M	
+5	1261	9	4	1978	2	NL	M	
+6	1453	11	5	1978	2	NL	M	
+6 rows | 1-8 of 14 columns
+Modify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current ChunkModify Chunk OptionsRun All Chunks AboveRun Current Chunk
+Show in New WindowClear OutputExpand/Collapse Output
+ Show Traceback
+Error in eval(lhs, parent, parent) : object 'surveys' not found
 
 Here, again, the output from these calls doesn't run off the screen
 anymore. Recall that **`dplyr`** has changed our object from`data.frame` to
